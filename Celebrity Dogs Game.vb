@@ -1,4 +1,4 @@
-﻿Module Module1
+Module Module1
     Dim Decknum As Integer
     Dim Exercise(29) As Integer
     Dim Intelligence(29) As Integer
@@ -9,7 +9,7 @@
     Dim Playerpile As Integer
     Dim ShuffleIndex As Int32 = 1000
     Dim N As Int32 = 29
-    Dim ShuffleArr(N), i, j, k, l As Int32
+    Dim ShuffleArr(n), i, j, k, l As Int32
     Dim Turnstaken As Integer
     Sub Main()
         MainMenu()
@@ -51,7 +51,7 @@
         End If
         CPUpile = Decknum / 2
         Playerpile = CPUpile
-        Cards()
+        cards()
     End Sub
     Sub Cards()
         Dim I As Integer
@@ -290,12 +290,12 @@
             Console.WriteLine("Congratulations, You Have Won The Celebrity Dogs Game")
             Console.WriteLine("Your Score Is: " & Playerpile)
             Console.WriteLine("Your Opponents Score Is: " & CPUpile)
-            Console.WriteLine("Turns Taken: " & Turnstaken)
+            Console.WriteLine("Turns Taken: " & turnstaken)
         ElseIf Playerpile < CPUpile Then
             Console.WriteLine("Better Luck Next Time, You Have Lost The Celebrity Dogs Game")
             Console.WriteLine("Your Score Is: " & Playerpile)
             Console.WriteLine("Your Opponents Score Is: " & CPUpile)
-            Console.WriteLine("Turns Taken: " & Turnstaken)
+            Console.WriteLine("Turns Taken: " & turnstaken)
         End If
         Console.WriteLine("Would You Like To Play Again? ")
         Console.Write("Enter Either Yes Or No: ")
